@@ -8,18 +8,26 @@
 
 import UIKit
 
+enum LayoutType: Int {
+    case Grid = 0
+    case List = 1
+}
+
 class ViewController: UIViewController {
+    
+    var photos = [String: String]()
+    var layoutType: LayoutType = LayoutType.Grid
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func getFlickrPhotos() {
+    }
 }
 
